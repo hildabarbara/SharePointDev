@@ -1,0 +1,12 @@
+﻿@model BaseAssinantesWeb.Models.BaseAssinantesModel
+
+<div>
+    <form action="@Model.EnderecoImportarPlanilha.ToString()" method="POST">
+        <input type="hidden" name="relayUrl" value="@Model.EnderecoImportarPlanilha.ToString()" />
+        <input type="hidden" name="plainSSO" value="@Model.ParametrosSSO" />
+        <input type="hidden" name="sso_field1" value="@Model.Token" />
+    </form>
+    <script language="javascript">
+		document.forms[0].submit();
+    </script>
+</div>
